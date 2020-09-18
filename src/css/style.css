@@ -1,0 +1,91 @@
+body {
+    background: #F3F3F3;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+#switch-mode {
+    margin-left: 95%;
+    position: relative;
+    top: 10px;
+}
+
+#switch-mode img {
+    width: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 40px auto;
+}
+
+.header img {
+    width: 250px;
+}
+
+.form {
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin: 30px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 44px;
+    width: 370px;
+}
+
+.input-group {
+    margin-bottom: 23px;
+    width: 100%;
+}
+
+.input-group .form__label {
+    font-size: 18px;
+}
+
+.input-group .form__input {
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    margin-top: 4px;
+    padding: 6px;
+    width: 100%;
+}
+
+#btnFind {
+    background: #007DDF;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #FFFFFF;
+    display: block;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 44px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s;
+    width: 50px;
+}
+
+#btnFind:hover {
+    background: transparent;
+    border: 1px solid #007DDF;
+    color: #007DDF;
+}
+
+.lyrics {
+    margin: 0 auto;
+    padding: 10px;
+    width: 600px;
+}
+
+.lyrics__name {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 2px auto;
+}
+
+#lyrics__song {
+    line-height: 1.5;
+}

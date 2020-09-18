@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <a id="switch-mode" href="">
+        <img src="./src/img/dark.png" alt="Dark">
+    </a>
+
+    <header class="header">
+        <img src="./src//img/logo-white.png" alt="Music Finder Logo">
+    </header>
+
+    <form class="form">
+        <div class="input-group">
+            <label class="form__label" for="artistName">Artist</label> <br>
+            <input class="form__input" name="artistName" id="artistName" type="text">
+        </div>
+
+        <div class="input-group">
+            <label class="form__label" for="songName">Song</label> <br>
+            <input class="form__input" name="songName" id="songName" type="text">
+        </div>
+
+        <a href="" id="btnFind">Find</a>
+    </form>
+
+    <main class="lyrics">
+        <h2 class="lyrics__name" id="lyrics__name">Paper Bag</h2>
+        <leg class="lyrics__artist" id="lyrics__artist">by: Fiona Apple</leg>
+
+        <p id="lyrics__song">I was staring at the sky, just looking for a star</p>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
