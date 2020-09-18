@@ -36,7 +36,7 @@ const getResults =  async (artistName, songName) => {
         let convertedLyric = newLyric.replace(/\\n/g, "<br>").replace(/\\&&\\r/g, "");
 
         song.innerHTML = convertUppercase(songName);
-        artist.innerHTML = convertUppercase(artistName);
+        artist.innerHTML = "by: " + convertUppercase(artistName);
         songLyrics.innerHTML = convertedLyric;
     } catch (err) {
         alert("Sorry, the song wasn't found");
