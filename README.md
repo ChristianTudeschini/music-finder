@@ -5,6 +5,6 @@ Após realizar a clonagem do repositório, é necessário apenas abrir o arquivo
 ## Novidades futuras
 * Versão Mobile
 * Dark Mode
-* Melhorias na usabilidade
+* Melhorias Gerais
 
 Site: https://christiantudeschini.github.io/music-finder/
