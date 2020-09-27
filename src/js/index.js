@@ -1,4 +1,4 @@
-const convertUppercase = (str) => {
+convertUppercase = (str) => {
     let arr = str.split(" ");
     arr.map((x, index) => {
         arr[index] = x.charAt(0).toUpperCase() + x.substring(1, x.length);
@@ -8,7 +8,7 @@ const convertUppercase = (str) => {
     return finalStr;
 }
 
-const getLyrics = (artist, song) => {
+getLyrics = (artist, song) => {
     return new Promise((resolve, reject) => {
         var req = new XMLHttpRequest();
         req.open('GET',`https://api.lyrics.ovh/v1/${artist}/${song}`);
@@ -29,7 +29,7 @@ var song = document.getElementById("lyrics__name");
 var artist = document.getElementById("lyrics__artist");
 var songLyrics = document.getElementById("lyrics__song");
 
-const getResults =  async (artistName, songName) => {
+getResults = async (artistName, songName) => {
     try {
         let lyric = await getLyrics(artistName, songName);
         let newLyric = JSON.stringify(lyric.lyrics);
@@ -61,14 +61,36 @@ btnFind.addEventListener("click", (event) => {
 
 
 
-// SWITCH MODE LOGIC
-/* 
+
+/* ------------------ Dark Mode ------------------ */
+
+var verifyDarkMode = false;
+
 var body = document.querySelector("body");
-var form = document.getElementsByClassName("form");
+var form = document.querySelector(".form");
+var formInput = document.querySelectorAll(".form__input");
 
 var btnSwitch = document.getElementById("switch-mode");
+var logoHeader = document.getElementById("header__logo");
 btnSwitch.addEventListener("click", (e) => {
     e.preventDefault();
-    btnSwitch.querySelector("img").src()
-    body.classList.toggle("background-dark");
-}) */
+    if(verifyDarkMode != false) {
+        verifyDarkMode = false;
+        btnSwitch.querySelector("img").src = "./src/img/dark.png";
+        logoHeader.src = "./src/img/logo-white.png";
+    } else {
+        verifyDarkMode = true;
+        btnSwitch.querySelector("img").src = "./src/img/light.png";
+        logoHeader.src = "./src/img/logo-dark.png";
+    }
+    darkMode();
+})
+
+darkMode = () => {
+    body.classList.toggle("primary-dark");
+    form.classList.toggle("secondary-dark");
+    formInput.forEach((input) => {
+        input.classList.toggle("primary-dark");
+        input.classList.toggle("dark-border");
+    })
+}

@@ -3,8 +3,13 @@ body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
 #switch-mode {
-    margin-left: 95%;
     position: relative;
     top: 10px;
 }
@@ -16,7 +21,7 @@ body {
 .header {
     display: flex;
     justify-content: center;
-    padding: 40px auto;
+    padding-top: 40px;
 }
 
 .header img {
@@ -88,4 +93,42 @@ body {
 
 #lyrics__song {
     line-height: 1.5;
+}
+
+
+
+/* DARK MODE */
+
+.primary-dark {
+    background: #1A1A1A;
+    color: #E0E0E0;
+}
+
+.secondary-dark {
+    background: #2D2D2D;
+    color: #E0E0E0;
+}
+
+.dark-border {
+    border: 1px solid #7A7A7A !important;
+}
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 650px) {
+    .header {
+        padding-top: 10px;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    .lyrics {
+        padding: 10px 30px;
+        text-align: center;
+        width: unset;
+    }
 }
