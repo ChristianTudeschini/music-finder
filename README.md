@@ -1,5 +1,6 @@
 # Music Finder
-## Setup
-Após realizar a clonagem do repositório, é necessário apenas abrir o arquivo ```index.html```
+### Setup
 
-Site: https://christiantudeschini.github.io/music-finder/
+After cloning the repository, simply open the ```index.html``` file.
+
+Website: https://christiantudeschini.github.io/music-finder/
